@@ -1,0 +1,76 @@
+<DOCTYPE! html>
+    <html>
+        <head>
+            <title>Registration Form Craig Dave Rullon</title>
+        </head>
+        <body>
+            <h1 align=center>Sign up now!</h1>
+            <p>Field marked(*)are required</p>
+            <form action="/action_page.php">
+                <fieldset>
+                <legend>Your Details</legend>            
+                <label for="Hname">Name*</label>
+                <input type="text" size="35" id="Hname" name="Hname" placeholder="Full Name"><br>
+            
+                <label for="email">Email*</label>
+                <input type="email" size="25" id="email" name="email" placeholder="e.g ryan@example.net"></input><br>
+            
+                <label for="phone">Phone*</label>
+                <input type="tel" size="35"  name="phone" placeholder="Please enter eleven digits">
+                </fieldset>
+
+                <fieldset>
+                <legend>Delivery Address</legend>
+                <label for="Address1">Address 1*</label>
+                <input type="text" size="35" id="Address1" placeholder="House/Apt Number and Street"><br>
+
+                <label for="Disctrict">District/Barangay*</label>
+                <input type="text" size="35" id="Disctrict" name="District" placeholder="Andres Bonifacio"><br>
+
+                <label for="City">City*</label>
+                <select>
+                    <option value="Baguio">Baguio</option>
+                    <option value="Cabanatuan">Cabanatuan</option>
+                    <option value="Angeles">Angeles</option>
+                    <option value="San Fernando">San Fernando</option>
+                    <option value="Olangopo">Olangopo</option>
+                    <option value="Santa Maria">Santa Maria</option>
+                    <option value="San Mateo">San Mateo</option>
+                    <option value="Marikina">Marikina</option>
+                    <option value="Quezon City">Quezon City</option>
+                    <option value="Manila">Manila</option>
+                </select><br>
+
+                <label for="Pcode">Postal Code*</label>
+                <input type="text" size="35" name="Pcode"><br>
+
+                <label for="Province">Province*</label>
+                <select>
+                    <option value="Abra">Abra</option>
+                    <option value="Apayo">Apayo</option>
+                    <option value="Benguet">Benguet</option>
+                    <option value="Kalinga">Kalinga</option>
+                    <option value="Ifugao">Ifugao</option>
+                    <option value="Mountain Province">Mountain Province</option>
+                </select>
+                </fieldset>
+                
+                <fieldset>
+                <legend>Membership Information</legend>
+                <label for="Username">Username*</label>
+                <input type="text" size="35" name="Username" title="" placeholder="At least 8 alpanumeric chatacters"><br>
+
+                <label for="Password">Password*</label>
+                <input type="password" name="Password" title="" size="35" max="" placeholder="Create Password"><br>
+
+                <label for="MagSub">Magazine Subscriptions</label><br>
+                <input type="radio" name="Magazine" value="PCMagazine">PCMagazine<br>
+                <input type="radio" name="Wired" value="Wired">Wired<br>
+                <input type="radio" name="Computerworld" value="Computerworld">Computerworld<br>
+                <input type="radio" name="I don't Subscribe" value=" on't Subscribe">I don't Subscribe<br>   
+                <input type="radio" name="Others" value="Others">Others<br>  
+                </fieldset>
+            <input type="submit" value="Sign Up">
+            </form>
+        </body>
+    </html>
