@@ -1,207 +1,90 @@
-<DOCTYPE! html>
-<html>
+<!DOCTYPE html>
     <head>
-        <title>Exercise 12</title>
-        <link href="stylepersonal.css" rel="stylesheet" type="text/css" />
-    </head>
+        <title>Exercise 13</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styles/styles.css" media="screen">
     <style>
-    body{
-        background-color:   rgb(126, 126, 126);        
+    div.container {
+        position: relative;
     }
 
-    div.body{    
-        width: 1490px;
-        padding: 10px;
+    div.box1 {
+        width: 500px;
+        height: 200px;
         border: 3px solid black;
-        text-align: center;
-        
-    }
-    
-    div.header1{
-        width: 1460px;
-        padding: 10px;
-        border: 5px solid black;
-        text-align: center;
-        background-color: rgb(183, 182, 182);
     }
 
-    div.nav1{
-        width: 1430px;
-        padding: 10px;
-        border: 5px solid black;
-        text-align: center;
-        background-color: rgb(214, 212, 212);
+    div.box2 {
+        position: static;
+        top: 8px;
+        right: 16;
+        width: 500px;
+        height: 200px;
+        border: 3px solid black;
     }
 
-    div.section1{
+    div.box3 {
         position: absolute;
-        width: 430px;
-        padding: 10px;
-        border: 5px solid black;
-        text-align: center;
-        background-color: rgb(183, 182, 182);
+        width: 500px;
+        height: 200px;
+        border: 3px solid black;
     }
 
-    div.header2{
-        width: 390px;
-        padding: 10px;
-        border: 5px solid black;
-        text-align: center;
-        background-color: rgb(214, 212, 212);
-    }
+    @media only screen and (min-width: 360px) {
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
 
-    div.nav2{
-        width: 360px;
-        height: 360px;
-        padding: 10px;
-        border: 5px solid black;
-        text-align: center;
-        background-color: rgb(214, 212, 212);
-    }
 
-    div.footer{
-        width: 390px;
-        padding: 10px;
-        border: 5px solid black;
-        text-align: center;
-        background-color: rgb(214, 212, 212);
-    }
+@media only screen and (min-width: 720px) {
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
 
-    div.section2{
-        position: absolute;
-        top: 149px;
-        right: 16px;
-        width: 1022px;
-        padding: 10px;
-        border: 5px solid black;
-        text-align: center;
-        background-color: rgb(183, 182, 182);
-    }
 
-    div.header3{
-        top: 149px;
-        right: 16px;
-        width: 1010 px;
-        padding: 10px;
-        border: 5px solid black;
-        text-align: center;
-        background-color: rgb(183, 182, 182);
-    }
-
-    div.article{
-        top: 149px;
-        right: 16px;
-        width: 1010 px;
-        padding: 10px;
-        border: 5px solid black;
-        text-align: center;
-        background-color: rgb(183, 182, 182);
-    }
-
-    div.header4 {
-        top: 149px;
-        right: 16px;
-        width: 1010 px;
-        padding: 10px;
-        border: 5px solid black;
-        text-align: center;
-        background-color: rgb(183, 182, 182);
-    }
-
-    div.p {
-        top: 149px;
-        right: 16px;
-        width: 1010 px;
-        padding: 10px;
-        border: 5px solid black;
-        text-align: center;
-        background-color: rgb(183, 182, 182);
-    }
-
-    div.p1 {
-        top: 149px;
-        right: 16px;
-        width: 1010 px;
-        padding: 10px;
-        border: 5px solid black;
-        text-align: center;
-        background-color: rgb(183, 182, 182);
-    }
-
-    div.footer1 {
-        top: 149px;
-        right: 16px;
-        width: 1010 px;
-        padding: 10px;
-        border: 5px solid black;
-        text-align: center;
-        background-color: rgb(183, 182, 182);
-    }
-
-    div.article1{
-        top: 149px;
-        right: 16px;
-        width: 1010 px;
-        padding: 10px;
-        border: 5px solid black;
-        text-align: center;
-        background-color: rgb(183, 182, 182);
-    }
-
-    div.header5{
-        top: 149px;
-        right: 16px;
-        width: 1010 px;
-        padding: 10px;
-        border: 5px solid black;
-        text-align: center;
-        background-color: rgb(183, 182, 182);
-    }
-
-    div.p2{
-        top: 149px;
-        right: 16px;
-        width: 810 px;
-        padding: 10px;
-        border: 5px solid black;
-        text-align: center;
-        background-color: rgb(183, 182, 182);
-    }
-
-    div.aside{
-        top: 149px;
-        right: 16px;
-        width: 810 px;
-        padding: 10px;
-        border: 5px solid black;
-        text-align: center;
-        background-color: rgb(183, 182, 182);
-    }
-
-    div.footer2{
-        top: 149px;
-        right: 16px;
-        width: 810 px;
-        padding: 10px;
-        border: 5px solid black;
-        text-align: center;
-        background-color: rgb(183, 182, 182);
-    }
-
-    div.footer3{
-        top: 149px;
-        right: 16px;
-        width: 810 px;
-        padding: 10px;
-        border: 5px solid black;
-        text-align: center;
-        background-color: rgb(183, 182, 182);
-    }
+@media only screen and (min-width: 1080px) {
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
     </style>
-
+    </head>
     <body>
-        <div class="body">body<div class="header1">header<div class="nav1">nav</div></div></div>
-        <div class="section1">section<div class="header2">header<div class="nav2">nav</div></div><div class="footer">footer</div></div>
-        <div class="section2">section<div class="header3">header</div> <div class="article">article<div class="header4">header</div><div class="p">p</div><div class="p1">p</div><div class="footer1">footer</div></div> <div class="article1">article<div class="header5">header</div><div class="p2">p</div><div class="aside">aside</div><div class="footer2">footer<div class="aside">aside<div class="footer3">footer</div> 
+
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+
     </body>
 </html>
